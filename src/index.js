@@ -35,3 +35,11 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+const express = require('express');
+
+const app = express();
+
+const PORT=process.env.PORT || 3000;
+
+app.listen(PORT, ()=> console.log('Servidor escuchando en el puerto ',PORT)); 
+
